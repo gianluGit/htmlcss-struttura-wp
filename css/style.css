@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100px;
+  /* debug */
+  background-color: yellow;
+}
+
+/* regole contenitore per float */
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*  */
+
+/* macro blocco di sinistra */
+.left {
+  width: 20%;
+  height: 400px;
+  float: left;
+  /* debug */
+  background-color: pink;
+}
+
+/* macro blocco centrale */
+.middle {
+  width: 50%;
+  height: 500px;
+  float: left;
+  margin: 0 5%;
+  /* debug */
+  background-color: red;
+}
+
+/* macro blocco di destra */
+.right {
+  width: 20%;
+  height: 450px;
+  float: left;
+  /* debug */
+  /* background-color: blue; */
+}
+
+.right div {
+  width: 100%;
+  height: 225px;
+  /* debug */
+  background-color: green;
+}
+
+.right-block-up {
+  margin-bottom: 10px;
+}
+/*  */
+
+footer {
+  height: 100px;
+  /* debug */
+  background-color: navy;
+}
